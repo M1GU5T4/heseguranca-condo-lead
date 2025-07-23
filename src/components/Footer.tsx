@@ -1,3 +1,4 @@
+
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
@@ -7,9 +8,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2 md:col-span-1">
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-primary-blue">HE</span>
-              <span className="text-white">segurança</span>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/94dd0676-1f27-4561-8c21-ed681f8707ca.png" 
+                alt="HEsegurança - Soluções Tecnológicas para Condomínios" 
+                className="h-12 w-auto filter brightness-0 invert"
+              />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Soluções tecnológicas avançadas para a segurança e automação de condomínios. 

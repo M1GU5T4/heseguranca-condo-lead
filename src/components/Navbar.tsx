@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -17,11 +18,14 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">
-              <span className="text-primary-blue">HE</span>
-              <span className="text-foreground">segurança</span>
-            </div>
+          <div className="flex items-center">
+            <a href="#inicio" className="flex items-center">
+              <img 
+                src="/lovable-uploads/94dd0676-1f27-4561-8c21-ed681f8707ca.png" 
+                alt="HEsegurança - Soluções Tecnológicas para Condomínios" 
+                className="h-10 w-auto"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}

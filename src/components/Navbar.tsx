@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo-heseguranca.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,15 @@ const Navbar = () => {
     { label: "Contato", href: "#contato" }
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-border">
       <div className="container mx-auto px-6">
@@ -21,7 +31,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="#inicio" className="flex items-center">
               <img 
-                src="/lovable-uploads/94dd0676-1f27-4561-8c21-ed681f8707ca.png" 
+                src={logo} 
                 alt="HEsegurança - Soluções Tecnológicas para Condomínios" 
                 className="h-10 w-auto"
               />
@@ -34,6 +44,7 @@ const Navbar = () => {
               <a
                 key={item.label}
                 href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="text-foreground hover:text-primary-blue transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -69,8 +80,8 @@ const Navbar = () => {
                 <a
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
                   className="text-foreground hover:text-primary-blue transition-colors duration-200 font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>

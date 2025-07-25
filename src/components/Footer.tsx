@@ -1,5 +1,6 @@
 
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import logo from "@/assets/logo-heseguranca.png";
 
 const Footer = () => {
   return (
@@ -10,14 +11,14 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
               <img 
-                src="/lovable-uploads/94dd0676-1f27-4561-8c21-ed681f8707ca.png" 
+                src={logo} 
                 alt="HEsegurança - Soluções Tecnológicas para Condomínios" 
                 className="h-12 w-auto filter brightness-0 invert"
               />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Soluções tecnológicas avançadas para a segurança e automação de condomínios. 
-              Transformando proteção em tranquilidade.
+              Soluções tecnológicas avançadas para a segurança e automação de condomínios.<br/>
+              HE Seguranca
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-primary-blue rounded-full hover:bg-primary-blue-dark transition-colors">
@@ -63,19 +64,18 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary-blue flex-shrink-0" />
                 <div>
-                  <p>(11) 9 9999-9999</p>
-                  <p>(11) 3333-3333</p>
+                  <p>31 98854-8783 Evandro</p>
+                  <p>31 99161-3547 Helio Bomtempo</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-blue flex-shrink-0" />
-                <p>contato@heseguranca.com.br</p>
+                <p>gustavomartinsnogura@hotmail.com</p>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary-blue flex-shrink-0 mt-0.5" />
                 <p>
-                  Rua da Tecnologia, 123<br />
-                  São Paulo - SP, 01234-567
+                  Rua do menino da laranja
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/80">
-          <p>&copy; 2024 HEsegurança. Todos os direitos reservados.</p>
+          <p>&copy; 2024 HE Seguranca. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

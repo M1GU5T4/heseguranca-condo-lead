@@ -109,8 +109,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Telefone</h3>
-                    <p className="text-muted-foreground">(11) 9 9999-9999</p>
-                    <p className="text-muted-foreground">(11) 3333-3333</p>
+                    <p className="text-muted-foreground">(31) 9 8854-8783 (Evandro)</p>
+                    <p className="text-muted-foreground">(31) 9 9161-3547 (Helio)</p>
                   </div>
                 </div>
               </CardContent>
@@ -124,8 +124,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">E-mail</h3>
-                    <p className="text-muted-foreground">contato@heseguranca.com.br</p>
-                    <p className="text-muted-foreground">vendas@heseguranca.com.br</p>
+                    <p className="text-muted-foreground">Gustavomartins@heseguranca.com.br</p>
+                    <p className="text-muted-foreground">Paulocesar@heseguranca.com.br</p>
                   </div>
                 </div>
               </CardContent>
@@ -141,7 +141,7 @@ const ContactSection = () => {
                     <h3 className="font-semibold text-lg mb-2">Endereço</h3>
                     <p className="text-muted-foreground">
                       Rua da Tecnologia, 123<br />
-                      São Paulo - SP, 01234-567
+                      Belo Horizonte - MG, 31000-000
                     </p>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ const ContactSection = () => {
                     <h3 className="font-semibold text-lg mb-2">Horário de Atendimento</h3>
                     <p className="text-muted-foreground">
                       Segunda a Sexta: 8h às 18h<br />
-                      Sábado: 9h às 13h
+                      Sábado: 7h às 18h
                     </p>
                   </div>
                 </div>

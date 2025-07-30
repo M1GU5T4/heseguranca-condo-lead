@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/heseguranca-condo-lead/', // Adiciona o caminho base para deployment no GitHub Pages
   server: {
     host: "::",
     port: 8080,
